@@ -52,6 +52,7 @@ public class SwiftFlutterHtmlToPdfPlugin: NSObject, FlutterPlugin {
                     }
                     
                     // dispose WKWebView
+                    self.urlObservation = nil
                     self.wkWebView = nil
                     result(convertedFilePath)
                 }
